@@ -7,8 +7,48 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <!-- YOUR CODE HERE -->
-  
+  <section class="top-container" id="top-container">
+    <div class="top">
+      <input type="text" placeholder="" class="search-input" id="city-input">
+      <button class="search-button" id="search-btn">Search</button>
+    </div>
+  </section>
+  <h2 id="not-found"></h2>
+  <section class="info-section">
+    <div class="info-container">
+      <div class="header">
+        <div class="location">
+          <h2 id="location"></h2>
+        </div>
+        <div class="temperature">
+          <h2 id="temprature" ></h2>
+        </div>
+    </div> 
+    <div class="table-container">
+        <table class="info-table">
+            <tr>
+                <th>Country</th>
+                <td id="countryName"></td>
+            </tr>
+            <tr>
+                <th>Timezone</th>
+                <td id="showTimeZone"></td>
+            </tr>
+            <tr>
+                <th>Population</th>
+                <td id =" showPopulation"></td>
+            </tr>
+            <tr>
+                <th>Tomorrow's Weather</th>
+                <td>
+                  <p id="min"></p>
+                  <p id="max"></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+  </section>
   <script src="./app.js"></script>
 </body>
 </html>
